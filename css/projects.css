@@ -1,0 +1,33 @@
+table {
+    border-collapse: collapse;
+}
+
+table td:nth-child(1),
+table td:nth-child(2),
+table td:nth-child(3) {
+    text-align: center;
+}
+
+table th {
+    border-bottom: 1px solid black;
+}
+
+table td {
+    border-bottom: 1px solid black;
+}
+
+.project-name {
+    width: 10%;
+}
+
+.project-date {
+    width: 15%;
+}
+
+.project-status {
+    width: 5%;
+}
+
+.project-text {
+    width: 60%;
+}
