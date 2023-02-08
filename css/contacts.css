@@ -1,0 +1,21 @@
+fieldset div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+fieldset label {
+    width: 40%;
+}
+
+fieldset input,
+fieldset select {
+    width: 40%;
+    height: 20px;
+}
+
+fieldset textarea {
+    width: 40%;
+    height: 150px;
+}

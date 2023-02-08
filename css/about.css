@@ -1,33 +1,80 @@
-main {
-    margin-top: 5em;
-    display: flex;
-    flex-direction: column;
-    width: 40vw;
+@media (min-width: 1401px) {
+    main {
+        margin-top: var(--about-main-margin);
+        display: flex;
+        flex-direction: column;
+        width: var(--about-main-width-widescreen);
+    }
+
+    main div {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    main div p {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: var(--about-main-content-width-widescreen);
+    }
+
+    main div picture {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: var(--about-main-content-width-widescreen);
+        /* height: var(--about-picture-height); */
+    }
+
+    img {
+        max-width: var(--about-image-max-width-widescreen);
+        border-radius: 100%;
+    }
 }
 
-main div {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
 
-main div p {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 47.5%;
-}
+@media (min-width: 680px) and (max-width: 1400px) {
 
-main div picture {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 47.5%;
-    height: 15em;
-}
+    main {
+        margin-top: var(--about-main-margin);
+        display: flex;
+        flex-direction: column;
+        width: var(--about-main-width-smallscreen);
+    }
 
-img {
-    max-width: 320px;
-    border-radius: 100%;
+    main div:nth-child(1),
+    main div:nth-child(3) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    main div:nth-child(2) {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    main div p {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: var(--about-main-content-width-smallscreen);
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    main div picture {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: var(--about-main-content-width-smallscreen);
+    }
+
+    img {
+        max-width: var(--about-image-max-width-smallscreen);
+    }
 }
