@@ -1,9 +1,9 @@
-@media (min-width: 1401px) {
+@media (min-width: 481px) {
     main {
         margin-top: var(--about-main-margin);
         display: flex;
         flex-direction: column;
-        width: var(--about-main-width-widescreen);
+        width: var(--about-main-width);
     }
 
     main div {
@@ -25,7 +25,6 @@
         justify-content: center;
         align-items: center;
         width: var(--about-main-content-width-widescreen);
-        /* height: var(--about-picture-height); */
     }
 
     img {
@@ -35,13 +34,13 @@
 }
 
 
-@media (min-width: 680px) and (max-width: 1400px) {
+@media (min-width: 320px) and (max-width: 480px) {
 
     main {
         margin-top: var(--about-main-margin);
         display: flex;
         flex-direction: column;
-        width: var(--about-main-width-smallscreen);
+        width: var(--about-main-width);
     }
 
     main div:nth-child(1),
@@ -61,7 +60,6 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-        width: var(--about-main-content-width-smallscreen);
         margin-top: 20px;
         margin-bottom: 20px;
     }
@@ -71,10 +69,10 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        width: var(--about-main-content-width-smallscreen);
+        width: var(--about-main-width);
     }
 
     img {
-        max-width: var(--about-image-max-width-smallscreen);
+        max-width: var(--about-main-width);
     }
 }

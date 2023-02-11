@@ -13,23 +13,19 @@ table td {
     border-bottom: 1px solid black;
 }
 
-table tr:hover {
-    background-color: var(--projects-table-row-hover-color);
-    cursor: pointer;
+@media (min-width: 481px) {
+    table tr:hover {
+        background-color: var(--projects-table-row-hover-color);
+        cursor: pointer;
+    }
+
+
 }
 
-.project-name {
-    width: var(--projects-table-colgroup-name-width);
-}
+@media (min-width: 320px) and (max-width: 480px) {
 
-.project-date {
-    width: var(--projects-table-colgroup-date-width);
-}
-
-.project-status {
-    width: var(--projects-table-colgroup-status-width);
-}
-
-.project-text {
-    width: var(--projects-table-colgroup-text-width);
+    table td:nth-child(2),
+    table th:nth-child(2) {
+        display: none;
+    }
 }

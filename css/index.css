@@ -3,17 +3,13 @@
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
-html {
-    font-size: 100%;
-}
-
 :root {
     --main-width: 50vw;
     --main-width-smallscreen: 70vw;
     --full-vw: 100vw;
     --full-vh: 100vh;
     --nav-height: 7vh;
-    --nav-width-smallscreen: 17vw;
+    --nav-width-smallscreen: 25vw;
     --nav-link-width: 10vw;
     --nav-link-width-smallscreen: 100%;
     --nav-link-height: 100%;
@@ -28,14 +24,9 @@ html {
     --about-image-max-width-smallscreen: 451px;
     --about-main-content-width-widescreen: 47.5%;
     --about-main-content-width-smallscreen: 451px;
-    --about-main-width-widescreen: 40vw;
-    --about-main-width-smallscreen: 80vw;
-    --about-main-margin: 5em;
+    --about-main-width: 70vw;
+    --about-main-margin: 2em;
     --projects-table-row-hover-color: rgb(223, 223, 223);
-    --projects-table-colgroup-name-width: 10%;
-    --projects-table-colgroup-date-width: 15%;
-    --projects-table-colgroup-status-width: 5%;
-    --projects-table-colgroup-text-width: 60%;
 }
 
 
@@ -56,7 +47,7 @@ main {
     width: var(--main-width);
 }
 
-@media (min-width: 1401px) {
+@media (min-width: 481px) {
     nav {
         display: flex;
         flex-direction: row;
@@ -85,26 +76,7 @@ main {
     }
 }
 
-@media (min-width: 320px) and (max-width: 1400px) {
-
-    p,
-    li,
-    a,
-    td,
-    th,
-    caption,
-    summary,
-    label,
-    legend,
-    button {
-        font-size: 2rem;
-    }
-
-    h1,
-    h2,
-    h3 {
-        font-size: 3rem;
-    }
+@media (min-width: 320px) and (max-width: 480px) {
 
     main {
         width: var(--main-width-smallscreen);

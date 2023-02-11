@@ -1,7 +1,7 @@
-figure {
-    max-width: var(--main-width);
-}
-
 img {
     max-width: 100%;
+}
+
+pre {
+    white-space: pre-wrap;
 }
