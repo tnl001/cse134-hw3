@@ -115,6 +115,49 @@ nav a:hover {
     transition-duration: var(--nav-link-transition-delay);
 }
 
+#home-header {
+    animation-name: slide-down;
+    animation-duration: 2s;
+}
+
 #home-img {
     width: 100%;
+    border-radius: 12px;
+    animation-name: slide-in;
+    animation-duration: 2s;
+}
+
+#home-par {
+    animation-name: slide-up;
+    animation-duration: 2s;
+}
+
+@keyframes slide-in {
+    0% {
+        transform: translate(-20em);
+    }
+
+    75% {
+        transform: rotate(20deg);
+    }
+}
+
+@keyframes slide-up {
+    0% {
+        transform: translate(0, 100vw);
+    }
+
+    75% {
+        transform: rotate(-15deg);
+    }
+}
+
+@keyframes slide-down {
+    0% {
+        transform: translate(0, -100vw);
+    }
+
+    75% {
+        transform: rotate(-15deg);
+    }
 }
