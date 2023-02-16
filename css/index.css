@@ -90,10 +90,10 @@ main {
     }
 
     #hamburger hr {
-        height: 1px;
+        height: 2px;
         width: 80%;
         background-color: black;
-
+        border: none;
     }
 
     nav {
@@ -119,6 +119,10 @@ main {
         justify-content: center;
         visibility: hidden;
         transition-delay: 0.3s;
+    }
+
+    nav:active {
+        width: 0vw;
     }
 
     #hamburder:hover {
