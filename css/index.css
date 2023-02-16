@@ -121,15 +121,15 @@ main {
         transition-delay: 0.3s;
     }
 
-    #hamburder:focus {
+    #hamburder:hover {
         visibility: hidden;
     }
 
-    #hamburger:focus+nav {
+    #hamburger:hover+nav {
         width: 100vw;
     }
 
-    #hamburger:focus+nav a {
+    #hamburger:hover+nav a {
         visibility: visible;
     }
 }
