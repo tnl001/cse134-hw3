@@ -121,8 +121,9 @@ main {
         transition-delay: 0.3s;
     }
 
-    nav:active {
+    nav:hover {
         width: 0vw;
+        visibility: visible;
     }
 
     #hamburder:hover {
