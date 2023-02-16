@@ -13,7 +13,7 @@ table td {
     border-bottom: 1px solid black;
 }
 
-@media (min-width: 481px) {
+@media (min-width: 769px) {
     table tr:hover {
         background-color: var(--projects-table-row-hover-color);
         cursor: pointer;
@@ -22,7 +22,7 @@ table td {
 
 }
 
-@media (min-width: 320px) and (max-width: 480px) {
+@media (min-width: 320px) and (max-width: 768px) {
 
     table td:nth-child(2),
     table th:nth-child(2) {

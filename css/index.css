@@ -5,20 +5,18 @@
 
 :root {
     --main-width: 50vw;
-    --main-width-smallscreen: 70vw;
+    --main-width-smallscreen: 85vw;
     --nav-height: 7vh;
-    --nav-width-smallscreen: 25vw;
     --nav-link-width: 10vw;
     --nav-link-height-widescreen: 100%;
     --nav-link-height-smallscreen: 6vh;
     --nav-link-color: white;
     --nav-link-transition-delay: 0.9s;
     --header-offset-widescreen: 9vh;
-    --header-offset-smallscreen: 3vh;
     --about-picture-height: 15em;
     --about-image-max-width-widescreen: 320px;
     --about-main-content-width-widescreen: 47.5%;
-    --about-main-width: 70vw;
+    --about-main-width: 85vw;
     --about-main-margin: 2em;
     --projects-table-row-hover-color: rgb(223, 223, 223);
 }
@@ -41,7 +39,7 @@ main {
     width: var(--main-width);
 }
 
-@media (min-width: 481px) {
+@media (min-width: 769px) {
     nav {
         display: flex;
         flex-direction: row;
@@ -70,15 +68,32 @@ main {
     }
 }
 
-@media (min-width: 320px) and (max-width: 480px) {
+@media (min-width: 320px) and (max-width: 768px) {
 
     h1 {
-        margin-left: var(--nav-width-smallscreen);
+        text-align: center;
     }
 
     main {
         width: var(--main-width-smallscreen);
-        margin-left: var(--nav-width-smallscreen);
+    }
+
+    #hamburger {
+        width: 10vw;
+        height: 10vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        row-gap: 3px;
+        border: none;
+        background-color: white;
+    }
+
+    #hamburger hr {
+        height: 1px;
+        width: 80%;
+        background-color: black;
+
     }
 
     nav {
@@ -87,13 +102,14 @@ main {
         align-items: center;
         background-color: black;
         height: 100vh;
-        width: var(--nav-width-smallscreen);
+        width: 0vw;
         position: fixed;
         top: 0px;
         z-index: 9999;
+        transition: width 0.5s;
     }
 
-    nav>a {
+    nav a {
         display: flex;
         text-decoration: none;
         color: var(--nav-link-color);
@@ -101,11 +117,20 @@ main {
         height: var(--nav-link-height-smallscreen);
         align-items: center;
         justify-content: center;
+        visibility: hidden;
+        transition-delay: 0.3s;
     }
 
-    h1 {
-        margin-top: var(--header-offset-smallscreen);
-        text-align: center;
+    #hamburder:focus {
+        visibility: hidden;
+    }
+
+    #hamburger:focus+nav {
+        width: 100vw;
+    }
+
+    #hamburger:focus+nav a {
+        visibility: visible;
     }
 }
 

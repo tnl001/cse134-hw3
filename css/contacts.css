@@ -40,7 +40,7 @@ fieldset textarea {
 
 
 
-@media (min-width: 481px) {
+@media (min-width: 769px) {
     #submit-btn {
         width: 50%;
         background-color: white;
@@ -54,7 +54,7 @@ fieldset textarea {
     }
 }
 
-@media (min-width: 320px) and (max-width: 480px) {
+@media (min-width: 320px) and (max-width: 768px) {
     #submit-btn {
         width: 50%;
         background-color: black;
