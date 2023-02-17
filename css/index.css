@@ -71,6 +71,7 @@ main {
 @media (min-width: 320px) and (max-width: 768px) {
 
     h1 {
+        margin-top: 7vh;
         text-align: center;
     }
 
@@ -84,9 +85,13 @@ main {
         display: flex;
         flex-direction: column;
         justify-content: center;
+        align-items: center;
         row-gap: 3px;
         border: none;
-        background-color: white;
+        background-color: rgb(255, 255, 255);
+        position: fixed;
+        border-radius: 999px;
+        z-index: 9999;
     }
 
     #hamburger hr {
@@ -98,10 +103,9 @@ main {
 
     #nav-background {
         height: 100vh;
-        width: 100vw;
+        width: 0vw;
         position: fixed;
         top: 0px;
-        z-index: -9999;
     }
 
     nav {
@@ -131,6 +135,7 @@ main {
 
     #hamburger:hover+#nav-background {
         background-color: rgba(190, 190, 190, 0.4);
+        width: 100vw;
     }
 
     #hamburger:hover+#nav-background+nav {
