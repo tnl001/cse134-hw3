@@ -130,7 +130,7 @@ main {
     }
 
     #hamburger:hover+#nav-background {
-        background-color: rgba(190, 190, 190, 0.2);
+        background-color: rgba(190, 190, 190, 0.4);
     }
 
     #hamburger:hover+#nav-background+nav {
