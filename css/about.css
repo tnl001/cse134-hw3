@@ -40,7 +40,7 @@
         margin-top: var(--about-main-margin);
         display: flex;
         flex-direction: column;
-        width: var(--about-main-width);
+        width: var(--about-main-width-smallscreen);
     }
 
     main div:nth-child(1),
@@ -69,10 +69,10 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        width: var(--about-main-width);
+        width: var(--about-main-width-smallscreen);
     }
 
     img {
-        max-width: var(--about-main-width);
+        max-width: var(--about-main-width-smallscreen);
     }
 }
