@@ -14,9 +14,11 @@
     --header-offset-widescreen: 9vh;
     --about-picture-height: 15em;
     --about-image-max-width-widescreen: 300px;
+    --about-image-max-width-bigscreen: 320px;
     --about-main-content-width-widescreen: 47.5%;
     --about-main-width: 70vw;
     --about-main-width-smallscreen: 85vw;
+    --about-main-width-bigscreen: 60vw;
     --about-main-margin: 2em;
     --projects-table-row-hover-color: rgb(223, 223, 223);
 }

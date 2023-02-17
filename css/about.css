@@ -1,4 +1,39 @@
-@media (min-width: 768px) {
+@media (min-width: 1280px) {
+    main {
+        margin-top: var(--about-main-margin);
+        display: flex;
+        flex-direction: column;
+        width: var(--about-main-width-bigscreen);
+    }
+
+    main div {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    main div p {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: var(--about-main-content-width-widescreen);
+    }
+
+    main div picture {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: var(--about-main-content-width-widescreen);
+    }
+
+    img {
+        max-width: var(--about-image-max-width-bigscreen);
+        border-radius: 100%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1279px) {
     main {
         margin-top: var(--about-main-margin);
         display: flex;
